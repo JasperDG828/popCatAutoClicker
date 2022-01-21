@@ -14,10 +14,11 @@ print('''
   / ____ \ |__| |  | | | |__| | |____| |____ _| || |____| . \| |____| | \ \ 
  /_/    \_\____/   |_|  \____/ \_____|______|_____\_____|_|\_\______|_|  \_\
      ''')
+delay = float(input("clickDelay > "))
 print("Starting in 5 seconds")
 time.sleep(5)
 print("Autoclicker started, press ctrl in the terminal window to stop")
 while True:
     kb.press("c")
-    time.sleep(0.07)
+    time.sleep(delay)
     kb.release("c")
